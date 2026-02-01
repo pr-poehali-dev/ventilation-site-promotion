@@ -86,22 +86,22 @@ export default function MainContent() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop",
-                title: "ТЦ Мега",
-                category: "Торговый центр",
+                image: "https://cdn.poehali.dev/projects/dce6e277-952f-4698-8543-d7f7aa3daf03/files/86ac9228-162a-4938-963c-3f8c851e39b4.jpg",
+                title: "Торговый центр",
+                category: "Пожарная сигнализация",
                 description: "Полный комплекс систем пожарной безопасности"
               },
               {
-                image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=400&fit=crop",
-                title: "Офисный центр",
-                category: "Бизнес-центр",
-                description: "Вентиляция и кондиционирование 15 этажей"
+                image: "https://cdn.poehali.dev/projects/dce6e277-952f-4698-8543-d7f7aa3daf03/files/59998f3e-bb7f-49cb-a011-14691a3aee40.jpg",
+                title: "Производственный цех",
+                category: "Промышленная вентиляция",
+                description: "Монтаж системы вентиляции и кондиционирования"
               },
               {
-                image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=600&h=400&fit=crop",
-                title: "Производственный цех",
-                category: "Промышленность",
-                description: "Промышленная вентиляция и пожаротушение"
+                image: "https://cdn.poehali.dev/projects/dce6e277-952f-4698-8543-d7f7aa3daf03/files/ffd5286b-8f59-4f95-8fe3-53bb8bdb9dfb.jpg",
+                title: "Складской комплекс",
+                category: "Система пожаротушения",
+                description: "Автоматическое пожаротушение 5000 м²"
               },
               {
                 image: "https://images.unsplash.com/photo-1565008576549-57569a49371d?w=600&h=400&fit=crop",
@@ -110,10 +110,10 @@ export default function MainContent() {
                 description: "Системы дымоудаления для 200 квартир"
               },
               {
-                image: "https://images.unsplash.com/photo-1577495508326-19a1b3cf65b7?w=600&h=400&fit=crop",
-                title: "Складской комплекс",
-                category: "Логистика",
-                description: "Автоматическое пожаротушение 5000 м²"
+                image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop",
+                title: "Бизнес-центр",
+                category: "Коммерческая недвижимость",
+                description: "Вентиляция и кондиционирование 15 этажей"
               },
               {
                 image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&h=400&fit=crop",
@@ -445,8 +445,8 @@ export default function MainContent() {
                 <Icon name="Phone" size={28} className="text-white" />
               </div>
               <h3 className="text-xl font-bold mb-3">Телефон</h3>
-              <a href="tel:+79991234567" className="text-purple-600 hover:text-purple-700 font-semibold text-lg">
-                +7 (999) 123-45-67
+              <a href="tel:+79022389203" className="text-purple-600 hover:text-purple-700 font-semibold text-lg">
+                +7 (902) 238-92-03
               </a>
               <p className="text-gray-600 mt-2 text-sm">Пн-Пт: 9:00 - 18:00</p>
             </Card>

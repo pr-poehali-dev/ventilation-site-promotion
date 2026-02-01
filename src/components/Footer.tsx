@@ -42,7 +42,7 @@ export default function Footer() {
             <ul className="space-y-3 text-gray-400">
               <li className="flex items-center gap-2">
                 <Icon name="Phone" size={18} />
-                <span>+7 (999) 123-45-67</span>
+                <span>+7 (902) 238-92-03</span>
               </li>
               <li className="flex items-center gap-2">
                 <Icon name="Mail" size={18} />
