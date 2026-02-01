@@ -40,17 +40,19 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-lg mb-4">Контакты</h4>
             <ul className="space-y-3 text-gray-400">
-              <li className="flex items-center gap-2">
-                <Icon name="Phone" size={18} />
-                <span>+7 (902) 238-92-03</span>
+              <li className="flex items-start gap-2">
+                <Icon name="Phone" size={18} className="mt-1 flex-shrink-0" />
+                <div className="flex flex-col gap-1">
+                  <span>+7 (902) 238-92-03</span>
+                  <span>+7 (987) 906-42-01</span>
+                </div>
               </li>
-              <li className="flex items-center gap-2">
-                <Icon name="Mail" size={18} />
-                <span>info@pko-pb.ru</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Icon name="MapPin" size={18} />
-                <span>г. Москва</span>
+              <li className="flex items-start gap-2">
+                <Icon name="Mail" size={18} className="mt-1 flex-shrink-0" />
+                <div className="flex flex-col gap-1">
+                  <span className="break-all">pko_pb2014@mail.ru</span>
+                  <span className="break-all">udin_max@mail.ru</span>
+                </div>
               </li>
             </ul>
           </div>

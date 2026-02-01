@@ -439,36 +439,37 @@ export default function MainContent() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <Card className="p-8 text-center hover-scale border-2 hover:border-purple-300">
-              <div className="w-16 h-16 rounded-full gradient-blue-purple flex items-center justify-center mx-auto mb-4">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <Card className="p-8 hover-scale border-2 hover:border-purple-300">
+              <div className="w-16 h-16 rounded-full gradient-blue-purple flex items-center justify-center mb-4">
                 <Icon name="Phone" size={28} className="text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-3">Телефон</h3>
-              <a href="tel:+79022389203" className="text-purple-600 hover:text-purple-700 font-semibold text-lg">
-                +7 (902) 238-92-03
-              </a>
-              <p className="text-gray-600 mt-2 text-sm">Пн-Пт: 9:00 - 18:00</p>
+              <h3 className="text-xl font-bold mb-4">Телефоны</h3>
+              <div className="space-y-2">
+                <a href="tel:+79022389203" className="block text-purple-600 hover:text-purple-700 font-semibold text-lg">
+                  +7 (902) 238-92-03
+                </a>
+                <a href="tel:+79879064201" className="block text-purple-600 hover:text-purple-700 font-semibold text-lg">
+                  +7 (987) 906-42-01
+                </a>
+              </div>
+              <p className="text-gray-600 mt-4 text-sm">Пн-Пт: 9:00 - 18:00</p>
             </Card>
 
-            <Card className="p-8 text-center hover-scale border-2 hover:border-blue-300">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center mx-auto mb-4">
+            <Card className="p-8 hover-scale border-2 hover:border-blue-300">
+              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center mb-4">
                 <Icon name="Mail" size={28} className="text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-3">Email</h3>
-              <a href="mailto:info@pko-pb.ru" className="text-blue-600 hover:text-blue-700 font-semibold text-lg">
-                info@pko-pb.ru
-              </a>
-              <p className="text-gray-600 mt-2 text-sm">Ответим в течение часа</p>
-            </Card>
-
-            <Card className="p-8 text-center hover-scale border-2 hover:border-orange-300">
-              <div className="w-16 h-16 rounded-full gradient-orange flex items-center justify-center mx-auto mb-4">
-                <Icon name="MapPin" size={28} className="text-white" />
+              <h3 className="text-xl font-bold mb-4">Email</h3>
+              <div className="space-y-2">
+                <a href="mailto:pko_pb2014@mail.ru" className="block text-blue-600 hover:text-blue-700 font-semibold text-lg break-all">
+                  pko_pb2014@mail.ru
+                </a>
+                <a href="mailto:udin_max@mail.ru" className="block text-blue-600 hover:text-blue-700 font-semibold text-lg break-all">
+                  udin_max@mail.ru
+                </a>
               </div>
-              <h3 className="text-xl font-bold mb-3">Адрес</h3>
-              <p className="text-gray-700 font-semibold">г. Москва</p>
-              <p className="text-gray-600 mt-2 text-sm">ул. Примерная, д. 123</p>
+              <p className="text-gray-600 mt-4 text-sm">Ответим в течение часа</p>
             </Card>
           </div>
         </div>
