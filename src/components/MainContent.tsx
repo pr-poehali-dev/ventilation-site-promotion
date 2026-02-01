@@ -86,40 +86,40 @@ export default function MainContent() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                image: "https://cdn.poehali.dev/projects/dce6e277-952f-4698-8543-d7f7aa3daf03/files/86ac9228-162a-4938-963c-3f8c851e39b4.jpg",
-                title: "Торговый центр",
-                category: "Пожарная сигнализация",
-                description: "Полный комплекс систем пожарной безопасности"
+                image: "https://cdn.poehali.dev/projects/dce6e277-952f-4698-8543-d7f7aa3daf03/files/9f79d07a-2eea-4fe6-9679-f90386ccc523.jpg",
+                title: "Промышленная вентиляция",
+                category: "Производственный объект",
+                description: "Монтаж промышленной системы вентиляции с воздуховодами большого сечения"
               },
               {
-                image: "https://cdn.poehali.dev/projects/dce6e277-952f-4698-8543-d7f7aa3daf03/files/59998f3e-bb7f-49cb-a011-14691a3aee40.jpg",
-                title: "Производственный цех",
-                category: "Промышленная вентиляция",
-                description: "Монтаж системы вентиляции и кондиционирования"
+                image: "https://cdn.poehali.dev/projects/dce6e277-952f-4698-8543-d7f7aa3daf03/files/1a5d4512-f22d-4445-84d5-d510fe0b584d.jpg",
+                title: "Пожарная сигнализация",
+                category: "Торговый центр",
+                description: "Установка адресной системы пожарной сигнализации с диспетчеризацией"
               },
               {
-                image: "https://cdn.poehali.dev/projects/dce6e277-952f-4698-8543-d7f7aa3daf03/files/ffd5286b-8f59-4f95-8fe3-53bb8bdb9dfb.jpg",
-                title: "Складской комплекс",
-                category: "Система пожаротушения",
-                description: "Автоматическое пожаротушение 5000 м²"
+                image: "https://cdn.poehali.dev/projects/dce6e277-952f-4698-8543-d7f7aa3daf03/files/b7b6d3a0-c886-4bbe-802d-23c2d73ce70e.jpg",
+                title: "Система пожаротушения",
+                category: "Складской комплекс",
+                description: "Монтаж автоматической спринклерной системы пожаротушения площадью 5000 м²"
               },
               {
-                image: "https://images.unsplash.com/photo-1565008576549-57569a49371d?w=600&h=400&fit=crop",
-                title: "Жилой комплекс",
-                category: "Жилая недвижимость",
-                description: "Системы дымоудаления для 200 квартир"
+                image: "https://cdn.poehali.dev/projects/dce6e277-952f-4698-8543-d7f7aa3daf03/files/82776997-0afa-4678-8211-2604f508e621.jpg",
+                title: "Офисная вентиляция",
+                category: "Бизнес-центр",
+                description: "Проектирование и установка приточно-вытяжной вентиляции в офисном центре класса А"
               },
               {
-                image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop",
-                title: "Бизнес-центр",
-                category: "Коммерческая недвижимость",
-                description: "Вентиляция и кондиционирование 15 этажей"
+                image: "https://cdn.poehali.dev/projects/dce6e277-952f-4698-8543-d7f7aa3daf03/files/7c5f6254-ee3c-48f2-a30b-1fff8fdafed3.jpg",
+                title: "Датчики дыма",
+                category: "Жилой комплекс",
+                description: "Установка адресных дымовых извещателей в многоквартирном доме на 200 квартир"
               },
               {
-                image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&h=400&fit=crop",
-                title: "Отель",
-                category: "Гостиничный бизнес",
-                description: "Комплексная система безопасности 50 номеров"
+                image: "https://cdn.poehali.dev/projects/dce6e277-952f-4698-8543-d7f7aa3daf03/files/888a7eab-feb0-493e-8edd-936730bd226b.jpg",
+                title: "Промышленная вентиляция",
+                category: "Складской комплекс",
+                description: "Монтаж и пусконаладка промышленной вентиляционной системы на складе 8000 м²"
               }
             ].map((project, index) => (
               <Card key={index} className="overflow-hidden hover-scale border-0 shadow-lg group">
@@ -242,25 +242,25 @@ export default function MainContent() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop",
-                date: "15 января 2026",
-                category: "Законодательство",
-                title: "Новые требования пожарной безопасности 2026",
-                excerpt: "Обзор изменений в нормативных документах и их влияние на объекты"
-              },
-              {
-                image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&h=400&fit=crop",
-                date: "10 января 2026",
+                image: "https://cdn.poehali.dev/projects/dce6e277-952f-4698-8543-d7f7aa3daf03/files/1a5d4512-f22d-4445-84d5-d510fe0b584d.jpg",
+                date: "28 января 2026",
                 category: "Технологии",
-                title: "Умные системы пожаротушения",
-                excerpt: "Как IoT и AI меняют подход к обеспечению безопасности зданий"
+                title: "Адресные системы пожарной сигнализации: что нужно знать в 2026 году",
+                excerpt: "Современные адресные системы позволяют точно определить место возгорания и значительно сократить время реагирования. Рассказываем о ключевых преимуществах и требованиях к установке."
               },
               {
-                image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
-                date: "5 января 2026",
-                category: "Практика",
-                title: "Как выбрать систему вентиляции",
-                excerpt: "Практическое руководство по выбору оптимального решения для вашего объекта"
+                image: "https://cdn.poehali.dev/projects/dce6e277-952f-4698-8543-d7f7aa3daf03/files/c42af6f1-ca85-43a1-982a-c13a5871ed0e.jpg",
+                date: "15 января 2026",
+                category: "Экономия",
+                title: "Энергоэффективная вентиляция: экономия до 40% на электричестве",
+                excerpt: "Современные системы с рекуперацией тепла и частотными преобразователями позволяют существенно снизить эксплуатационные расходы. Разбираем на реальных примерах наших объектов."
+              },
+              {
+                image: "https://cdn.poehali.dev/projects/dce6e277-952f-4698-8543-d7f7aa3daf03/files/b7b6d3a0-c886-4bbe-802d-23c2d73ce70e.jpg",
+                date: "8 января 2026",
+                category: "Экспертиза",
+                title: "Спринклерное пожаротушение на складах: требования и особенности монтажа",
+                excerpt: "Складские помещения категории В требуют особого подхода к проектированию систем пожаротушения. Делимся опытом установки спринклерных систем на объектах от 3000 до 15000 м²."
               }
             ].map((article, index) => (
               <Card key={index} className="overflow-hidden hover-scale border-0 shadow-lg">
