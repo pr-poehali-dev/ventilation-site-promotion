@@ -7,7 +7,7 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 fade-in">
             <div className="inline-block px-4 py-2 bg-purple-100 rounded-full text-purple-700 font-semibold text-sm">
-              🔥 Профессиональная безопасность
+              🔥 Пожарная безопасность и монтаж вентиляции
             </div>
             <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
               Пожарная безопасность и 

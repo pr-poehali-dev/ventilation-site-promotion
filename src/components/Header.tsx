@@ -30,7 +30,6 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
           <a href="#services" className="text-gray-700 hover:text-purple-600 transition font-medium">Услуги</a>
           <a href="#portfolio" className="text-gray-700 hover:text-purple-600 transition font-medium">Портфолио</a>
           <a href="#about" className="text-gray-700 hover:text-purple-600 transition font-medium">О компании</a>
-          <a href="#blog" className="text-gray-700 hover:text-purple-600 transition font-medium">Блог</a>
           <a href="#faq" className="text-gray-700 hover:text-purple-600 transition font-medium">FAQ</a>
           <a href="#contacts" className="text-gray-700 hover:text-purple-600 transition font-medium">Контакты</a>
           <Button className="gradient-blue-purple text-white font-semibold hover-scale">
@@ -44,7 +43,6 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
           <a href="#services" className="block py-2 text-gray-700">Услуги</a>
           <a href="#portfolio" className="block py-2 text-gray-700">Портфолио</a>
           <a href="#about" className="block py-2 text-gray-700">О компании</a>
-          <a href="#blog" className="block py-2 text-gray-700">Блог</a>
           <a href="#faq" className="block py-2 text-gray-700">FAQ</a>
           <a href="#contacts" className="block py-2 text-gray-700">Контакты</a>
           <Button className="w-full gradient-blue-purple text-white">Заказать консультацию</Button>
