@@ -10,7 +10,7 @@ export default function Footer() {
               <div className="w-10 h-10 rounded-xl gradient-blue-purple flex items-center justify-center">
                 <Icon name="Flame" size={24} className="text-white" />
               </div>
-              <span className="text-xl font-bold">ПКО Безопасность</span>
+              <span className="text-xl font-bold">ПКО "Пожарная Безопасность"</span>
             </div>
             <p className="text-gray-400">
               Профессиональные решения в области пожарной безопасности и вентиляции

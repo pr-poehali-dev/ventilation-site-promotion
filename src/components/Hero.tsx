@@ -10,8 +10,8 @@ export default function Hero() {
               🔥 Профессиональная безопасность
             </div>
             <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
-              Монтаж вентиляции и 
-              <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent"> пожарная безопасность</span>
+              Пожарная безопасность и 
+              <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent"> монтаж вентиляции</span>
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
               Комплексные решения для защиты вашего бизнеса. Лицензии, сертификаты, опыт более 10 лет.

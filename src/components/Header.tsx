@@ -15,7 +15,7 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
             <Icon name="Flame" size={28} className="text-white" />
           </div>
           <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            ПКО Безопасность
+            ПКО "Пожарная Безопасность"
           </span>
         </div>
         
