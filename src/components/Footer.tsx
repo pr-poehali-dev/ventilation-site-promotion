@@ -1,4 +1,5 @@
 import Icon from '@/components/ui/icon';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -63,8 +64,7 @@ export default function Footer() {
             © 2026 ООО "ПКО Пожарная Безопасность". Все права защищены.
           </p>
           <div className="flex gap-4">
-            <a href="#" className="text-gray-400 hover:text-white transition">Политика конфиденциальности</a>
-            <a href="#" className="text-gray-400 hover:text-white transition">Условия использования</a>
+            <Link to="/privacy" className="text-gray-400 hover:text-white transition">Политика конфиденциальности</Link>
           </div>
         </div>
       </div>

@@ -4,8 +4,59 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import Icon from '@/components/ui/icon';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { useToast } from '@/hooks/use-toast';
 
 export default function MainContent() {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    email: '',
+    message: ''
+  });
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('https://functions.poehali.dev/a221cba9-fe4a-42f2-a9e1-a1a468670f9d', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        toast({
+          title: "Заявка отправлена!",
+          description: "Мы свяжемся с вами в ближайшее время.",
+        });
+        setFormData({ name: '', phone: '', email: '', message: '' });
+      } else {
+        toast({
+          title: "Ошибка",
+          description: "Не удалось отправить заявку. Пожалуйста, попробуйте позже или позвоните нам.",
+          variant: "destructive"
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Ошибка",
+        description: "Не удалось отправить заявку. Пожалуйста, попробуйте позже.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <>
       <section id="services" className="py-20 px-4 bg-white">
@@ -384,11 +435,14 @@ export default function MainContent() {
                 </div>
               </div>
 
-              <form className="space-y-4">
+              <form className="space-y-4" onSubmit={handleSubmit}>
                 <div>
                   <Input 
                     placeholder="Ваше имя *" 
                     className="h-14 text-lg border-2 focus:border-purple-500"
+                    required
+                    value={formData.name}
+                    onChange={(e) => setFormData({...formData, name: e.target.value})}
                   />
                 </div>
                 <div>
@@ -396,6 +450,9 @@ export default function MainContent() {
                     type="tel"
                     placeholder="Телефон *" 
                     className="h-14 text-lg border-2 focus:border-purple-500"
+                    required
+                    value={formData.phone}
+                    onChange={(e) => setFormData({...formData, phone: e.target.value})}
                   />
                 </div>
                 <div>
@@ -403,23 +460,28 @@ export default function MainContent() {
                     type="email"
                     placeholder="Email" 
                     className="h-14 text-lg border-2 focus:border-purple-500"
+                    value={formData.email}
+                    onChange={(e) => setFormData({...formData, email: e.target.value})}
                   />
                 </div>
                 <div>
                   <Textarea 
                     placeholder="Опишите ваш объект и задачи" 
                     className="min-h-32 text-lg border-2 focus:border-purple-500"
+                    value={formData.message}
+                    onChange={(e) => setFormData({...formData, message: e.target.value})}
                   />
                 </div>
                 <Button 
                   type="submit"
                   size="lg" 
                   className="w-full gradient-blue-purple text-white font-semibold text-lg h-14 hover-scale"
+                  disabled={isSubmitting}
                 >
-                  Отправить заявку
+                  {isSubmitting ? 'Отправка...' : 'Отправить заявку'}
                 </Button>
                 <p className="text-sm text-gray-500 text-center">
-                  Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
+                  Нажимая кнопку, вы соглашаетесь с <Link to="/privacy" className="text-purple-600 hover:underline">политикой конфиденциальности</Link>
                 </p>
               </form>
             </div>
